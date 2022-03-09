@@ -1,0 +1,7 @@
+{
+  "name": "boilerplate-ts-express-api",
+  "version": "1.0.0",
+  "main": "src/shared/server.ts",
+  "author": "Sidinei Silva <sidinei.silva02@gmail.com>",
+  "license": "MIT"
+}
