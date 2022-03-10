@@ -1,0 +1,24 @@
+version: '3.8'
+services:
+  app:
+    container_name: boilerplate-ts-back
+    build:
+      context: .
+      dockerfile: Dockerfile.dev
+    command: npm run dev
+    environment:
+      - NODE_ENV=development
+    env_file:
+      - .env
+    volumes:
+      - .:/app
+    ports:
+      - ${SERVER_PORT}:${SERVER_PORT}
+      - 9229:9229
+    networks:
+      - boilerplate-ts-network
+    restart: unless-stopped
+
+networks:
+  boilerplate-ts-network:
+    name: boilerplate-ts-network
