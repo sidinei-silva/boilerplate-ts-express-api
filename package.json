@@ -3,5 +3,16 @@
   "version": "1.0.0",
   "main": "src/shared/server.ts",
   "author": "Sidinei Silva <sidinei.silva02@gmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "scripts": {
+    "commit": "cz"
+  },
+  "devDependencies": {
+    "cz-conventional-changelog": "3.3.0"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  }
 }
