@@ -8,7 +8,11 @@
     "commit": "cz",
     "prepare": "husky install",
     "dev": "ts-node-dev -r tsconfig-paths/register --inspect --transpile-only --ignore-watch node_modules --respawn src/shared/infra/http/server.ts",
-    "test": "NODE_ENV=test jest --runInBand --detectOpenHandles"
+    "test": "NODE_ENV=test jest --runInBand --detectOpenHandles",
+    "eslint:check": "eslint \"{src,apps,libs,test}/**/*.ts\" ",
+    "eslint:fix": "eslint --fix \"{src,apps,libs,test}/**/*.ts\" ",
+    "test:watch": "NODE_ENV=test jest --watch --runInBand --detectOpenHandles",
+    "build": "tsc"
   },
   "devDependencies": {
     "@types/cors": "^2.8.12",

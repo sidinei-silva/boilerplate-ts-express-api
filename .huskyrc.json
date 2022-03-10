@@ -1,0 +1,5 @@
+{
+  "hooks": {
+    "pre-commit": "npm run eslint:check && npm test && npm run build"
+  }
+}
